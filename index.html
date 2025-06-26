@@ -1,106 +1,165 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riya Tailors</title>
   <style>
     body {
+      background-color: #fcecec;
+      font-family: 'Georgia', serif;
+      color: #333;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff6f9;
-      color: #4b2e2e;
+      padding: 0;
     }
     header {
-      background-color: #5a1e1e;
-      color: white;
+      background-color: #fff0f5;
       padding: 20px;
       text-align: center;
     }
+    header h1 {
+      font-size: 3em;
+      color: #b35b6b;
+      font-weight: bold;
+    }
     nav {
-      background-color: #b36d6d;
+      background-color: #ffdee9;
+      padding: 10px;
       display: flex;
       justify-content: center;
-      padding: 10px;
       gap: 20px;
     }
     nav a {
-      color: white;
       text-decoration: none;
+      color: #b35b6b;
       font-weight: bold;
     }
-    section {
-      padding: 40px;
-    }
-    .gallery img {
-      width: 200px;
-      height: auto;
-      margin: 10px;
-      border-radius: 12px;
-    }
-    footer {
-      background-color: #5a1e1e;
-      color: white;
-      text-align: center;
+    .container {
       padding: 20px;
     }
-    .logo {
-      width: 100px;
+    .collection {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .dress {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .dress img {
+      width: 100%;
+      height: auto;
+    }
+    .dress-details {
+      padding: 10px;
+    }
+    .highlight {
+      color: #d1005c;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff0f5;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Riya Tailors</h1>
-    <p>Elegance in Every Stitch</p>
+    <p>By Sabita Sikder & Swapan Sikder</p>
   </header>
-
   <nav>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#categories">Categories</a>
+    <a href="#collection">Springs Collection</a>
+    <a href="#custom">Custom Orders</a>
+    <a href="#contact">Contact</a>
   </nav>
-
-  <section id="home">
+  <div class="container" id="home">
     <h2>Welcome to Riya Tailors</h2>
-    <p>Your one-stop destination for custom tailoring for both men and women. We specialize in designer blouses and personalized fits.</p>
-  </section>
+    <p>We design blouses, dresses, and tops — and specialize in custom tailoring made just for you! Explore our latest collection <strong>\"Springs\"</strong> with six beautiful styles. All dresses available in sizes XS, S, M, and L.</p>
+  </div>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p><strong>Sabita Sikder</strong> and <strong>Swapan Sikder</strong>—co-founders and CEOs of Riya Tailors—have brought elegance and tradition into every stitch since the very beginning. Based in West Bengal, we offer online orders, custom fits, and a commitment to quality tailoring.</p>
-  </section>
+  <div class="container" id="collection">
+    <h2>Springs Collection</h2>
+    <div class="collection">
+      <div class="dress">
+        <img src="/mnt/data/file-RC2b6jQ9UpLudHwz3HfEsK" alt="Red Fine Wine">
+        <div class="dress-details">
+          <p class="highlight">Red Fine Wine</p>
+          <p>Material: Butter</p>
+          <p>Available Colors: Green, Black, White</p>
+          <p>Original Price: ₹2100 | Offer: ₹680</p>
+        </div>
+      </div>
+      <div class="dress">
+        <img src="/mnt/data/file-CdBExtq9XSGVWNDdqz7NxJ" alt="White Daisy Dream Gown">
+        <div class="dress-details">
+          <p class="highlight">White Daisy Dream Gown</p>
+          <p>Material: Cotton</p>
+          <p>Sleeves: Full | Neck: Square</p>
+          <p>Colors: White (Customizable to Red, Blue, Yellow, Green, Pink)</p>
+          <p>Original Price: ₹1899 | Offer: ₹499</p>
+        </div>
+      </div>
+      <div class="dress">
+        <img src="/mnt/data/file-KgUqLMGtzpHzKNgFjbK7E7" alt="Fresh Daily Leaf">
+        <div class="dress-details">
+          <p class="highlight">Fresh Daily Leaf</p>
+          <p>Material: Pure Cotton</p>
+          <p>Colors: Green (Customizable to White, Black, Pink, Red, Blue)</p>
+          <p>Original Price: ₹850 | Offer: ₹450</p>
+        </div>
+      </div>
+      <div class="dress">
+        <img src="/mnt/data/file-R4wLL81vugKwqYGYvkRzwN" alt="Elegance in Yellow Floral">
+        <div class="dress-details">
+          <p class="highlight">Elegance in Yellow Floral</p>
+          <p>Original Price: ₹2500 | Offer: ₹820</p>
+        </div>
+      </div>
+      <div class="dress">
+        <img src="/mnt/data/file-9uwRCEsCmML36isYrTSNQS" alt="Vintage Glow">
+        <div class="dress-details">
+          <p class="highlight">Vintage Glow</p>
+          <p>Material: Cotton | Sleeves: Short</p>
+          <p>Color: Dusty Pink (Customizable to White, Blue, Green, Yellow, Black)</p>
+          <p>Original Price: ₹1200 | Offer: ₹700</p>
+        </div>
+      </div>
+      <div class="dress">
+        <img src="/mnt/data/file-6aDtJh34LrCUkaqjqzsMXc" alt="Dreamy Flower">
+        <div class="dress-details">
+          <p class="highlight">Dreamy Flower</p>
+          <p>Original Price: ₹1500 | Offer: ₹899</p>
+          <p><strong>Out of stock 😶‍🌫🤣</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Custom Blouse Making</li>
-      <li>Tailoring for Women’s Wear</li>
-      <li>Men’s Tailoring (Pants, Shirts, Kurta, etc.)</li>
-      <li>Online Order Available</li>
-    </ul>
-  </section>
+  <div class="container" id="custom">
+    <h2>Custom Orders</h2>
+    <p>You dream it, we stitch it! Send us your favorite colors, patterns, and fits — and we’ll make your dress exactly how you want it.</p>
+  </div>
 
-  <section id="categories">
-    <h2>Categories</h2>
-    <ul>
-      <li>Designer Blouses</li>
-      <li>Saree Matching Blouses</li>
-      <li>Traditional & Bridal Wear</li>
-      <li>Men’s Ethnic Wear</li>
-    </ul>
-  </section>
-
-  <section class="gallery">
-    <h2>Design Gallery</h2>
-    <p>Coming soon – our latest stitched pieces and styles.</p>
-  </section>
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: 9653310668</p>
+    <p>Instagram: <a href="https://www.instagram.com/riyatailors_?igsh=MXIyZjcwajFnYmNyYg==" target="blank">@riyatailors</a></p>
+    <p>Payment Info:<br>
+       Account Holder: Riya Sikder<br>
+       Account No: 21010522120<br>
+       <strong>Note: All orders are prepaid only</strong>
+    </p>
+  </div>
 
   <footer>
-    <p>Contact: 9563310668</p>
-    <p>© 2025 Riya Tailors. All rights reserved.</p>
+    <p>To place an order: Tap “Buy” → Register with phone → Enter payment & address → Get confirmation!</p>
+    <p>Thank you for choosing <strong>Riya Tailors</strong> 💖</p>
   </footer>
 </body>
 </html>
